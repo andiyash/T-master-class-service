@@ -1,0 +1,397 @@
+<!doctype html>
+<html lang="en" dir="ltr" class="docs-wrapper plugin-docs plugin-id-default docs-version-current docs-doc-page docs-doc-id-Requirements/arch" data-has-hydrated="false">
+<head>
+<meta charset="UTF-8">
+<meta name="generator" content="Docusaurus v3.6.3">
+<title data-rh="true">Функциональные требовния | My Site</title><meta data-rh="true" name="viewport" content="width=device-width,initial-scale=1"><meta data-rh="true" name="twitter:card" content="summary_large_image"><meta data-rh="true" property="og:image" content="https://andiyash.github.io/T-master-class-service/img/docusaurus-social-card.jpg"><meta data-rh="true" name="twitter:image" content="https://andiyash.github.io/T-master-class-service/img/docusaurus-social-card.jpg"><meta data-rh="true" property="og:url" content="https://andiyash.github.io/T-master-class-service/docs/Requirements/arch"><meta data-rh="true" property="og:locale" content="en"><meta data-rh="true" name="docusaurus_locale" content="en"><meta data-rh="true" name="docsearch:language" content="en"><meta data-rh="true" name="docusaurus_version" content="current"><meta data-rh="true" name="docusaurus_tag" content="docs-default-current"><meta data-rh="true" name="docsearch:version" content="current"><meta data-rh="true" name="docsearch:docusaurus_tag" content="docs-default-current"><meta data-rh="true" property="og:title" content="Функциональные требовния | My Site"><meta data-rh="true" name="description" content="Функциональные требования"><meta data-rh="true" property="og:description" content="Функциональные требования"><link data-rh="true" rel="icon" href="/T-master-class-service/img/favicon.ico"><link data-rh="true" rel="canonical" href="https://andiyash.github.io/T-master-class-service/docs/Requirements/arch"><link data-rh="true" rel="alternate" href="https://andiyash.github.io/T-master-class-service/docs/Requirements/arch" hreflang="en"><link data-rh="true" rel="alternate" href="https://andiyash.github.io/T-master-class-service/docs/Requirements/arch" hreflang="x-default"><script src="https://cdn.jsdelivr.net/npm/docusaurus-plugin-drawio/viewer.min.js"></script><link rel="stylesheet" href="/T-master-class-service/assets/css/styles.30cb67da.css">
+<script src="/T-master-class-service/assets/js/runtime~main.d44fd619.js" defer="defer"></script>
+<script src="/T-master-class-service/assets/js/main.1b9ba4a2.js" defer="defer"></script>
+</head>
+<body class="navigation-with-keyboard">
+<script>!function(){function t(t){document.documentElement.setAttribute("data-theme",t)}var e=function(){try{return new URLSearchParams(window.location.search).get("docusaurus-theme")}catch(t){}}()||function(){try{return window.localStorage.getItem("theme")}catch(t){}}();t(null!==e?e:"light")}(),function(){try{const n=new URLSearchParams(window.location.search).entries();for(var[t,e]of n)if(t.startsWith("docusaurus-data-")){var a=t.replace("docusaurus-data-","data-");document.documentElement.setAttribute(a,e)}}catch(t){}}()</script><div id="__docusaurus"><div role="region" aria-label="Skip to main content"><a class="skipToContent_fXgn" href="#__docusaurus_skipToContent_fallback">Skip to main content</a></div><nav aria-label="Main" class="navbar navbar--fixed-top"><div class="navbar__inner"><div class="navbar__items"><button aria-label="Toggle navigation bar" aria-expanded="false" class="navbar__toggle clean-btn" type="button"><svg width="30" height="30" viewBox="0 0 30 30" aria-hidden="true"><path stroke="currentColor" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2" d="M4 7h22M4 15h22M4 23h22"></path></svg></button><a class="navbar__brand" href="/T-master-class-service/"><div class="navbar__logo"><img src="/T-master-class-service/img/logo.svg" alt="My Site Logo" class="themedComponent_mlkZ themedComponent--light_NVdE"><img src="/T-master-class-service/img/logo.svg" alt="My Site Logo" class="themedComponent_mlkZ themedComponent--dark_xIcU"></div><b class="navbar__title text--truncate">doc-as-a-code-workshop</b></a></div><div class="navbar__items navbar__items--right"><a href="https://github.com/andiyash/T-master-class-service" target="_blank" rel="noopener noreferrer" class="navbar__item navbar__link">GitHub<svg width="13.5" height="13.5" aria-hidden="true" viewBox="0 0 24 24" class="iconExternalLink_nPIU"><path fill="currentColor" d="M21 13v10h-21v-19h12v2h-10v15h17v-8h2zm3-12h-10.988l4.035 4-6.977 7.07 2.828 2.828 6.977-7.07 4.125 4.172v-11z"></path></svg></a><div class="toggle_vylO colorModeToggle_DEke"><button class="clean-btn toggleButton_gllP toggleButtonDisabled_aARS" type="button" disabled="" title="Switch between dark and light mode (currently light mode)" aria-label="Switch between dark and light mode (currently light mode)" aria-live="polite" aria-pressed="false"><svg viewBox="0 0 24 24" width="24" height="24" class="lightToggleIcon_pyhR"><path fill="currentColor" d="M12,9c1.65,0,3,1.35,3,3s-1.35,3-3,3s-3-1.35-3-3S10.35,9,12,9 M12,7c-2.76,0-5,2.24-5,5s2.24,5,5,5s5-2.24,5-5 S14.76,7,12,7L12,7z M2,13l2,0c0.55,0,1-0.45,1-1s-0.45-1-1-1l-2,0c-0.55,0-1,0.45-1,1S1.45,13,2,13z M20,13l2,0c0.55,0,1-0.45,1-1 s-0.45-1-1-1l-2,0c-0.55,0-1,0.45-1,1S19.45,13,20,13z M11,2v2c0,0.55,0.45,1,1,1s1-0.45,1-1V2c0-0.55-0.45-1-1-1S11,1.45,11,2z M11,20v2c0,0.55,0.45,1,1,1s1-0.45,1-1v-2c0-0.55-0.45-1-1-1C11.45,19,11,19.45,11,20z M5.99,4.58c-0.39-0.39-1.03-0.39-1.41,0 c-0.39,0.39-0.39,1.03,0,1.41l1.06,1.06c0.39,0.39,1.03,0.39,1.41,0s0.39-1.03,0-1.41L5.99,4.58z M18.36,16.95 c-0.39-0.39-1.03-0.39-1.41,0c-0.39,0.39-0.39,1.03,0,1.41l1.06,1.06c0.39,0.39,1.03,0.39,1.41,0c0.39-0.39,0.39-1.03,0-1.41 L18.36,16.95z M19.42,5.99c0.39-0.39,0.39-1.03,0-1.41c-0.39-0.39-1.03-0.39-1.41,0l-1.06,1.06c-0.39,0.39-0.39,1.03,0,1.41 s1.03,0.39,1.41,0L19.42,5.99z M7.05,18.36c0.39-0.39,0.39-1.03,0-1.41c-0.39-0.39-1.03-0.39-1.41,0l-1.06,1.06 c-0.39,0.39-0.39,1.03,0,1.41s1.03,0.39,1.41,0L7.05,18.36z"></path></svg><svg viewBox="0 0 24 24" width="24" height="24" class="darkToggleIcon_wfgR"><path fill="currentColor" d="M9.37,5.51C9.19,6.15,9.1,6.82,9.1,7.5c0,4.08,3.32,7.4,7.4,7.4c0.68,0,1.35-0.09,1.99-0.27C17.45,17.19,14.93,19,12,19 c-3.86,0-7-3.14-7-7C5,9.07,6.81,6.55,9.37,5.51z M12,3c-4.97,0-9,4.03-9,9s4.03,9,9,9s9-4.03,9-9c0-0.46-0.04-0.92-0.1-1.36 c-0.98,1.37-2.58,2.26-4.4,2.26c-2.98,0-5.4-2.42-5.4-5.4c0-1.81,0.89-3.42,2.26-4.4C12.92,3.04,12.46,3,12,3L12,3z"></path></svg></button></div><div class="navbarSearchContainer_Bca1"></div></div></div><div role="presentation" class="navbar-sidebar__backdrop"></div></nav><div id="__docusaurus_skipToContent_fallback" class="main-wrapper mainWrapper_z2l0"><div class="docsWrapper_hBAB"><button aria-label="Scroll back to top" class="clean-btn theme-back-to-top-button backToTopButton_sjWU" type="button"></button><div class="docRoot_UBD9"><aside class="theme-doc-sidebar-container docSidebarContainer_YfHR"><div class="sidebarViewport_aRkj"><div class="sidebar_njMd"><nav aria-label="Docs sidebar" class="menu thin-scrollbar menu_SIkG"><ul class="theme-doc-sidebar-menu menu__list"><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-1 menu__list-item"><a class="menu__link" href="/T-master-class-service/docs/intro">Домашняя страница</a></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="menu__link menu__link--sublist" href="/T-master-class-service/docs/category/концепция-и-границы-продукта">Концепция и границы продукта</a><button aria-label="Expand sidebar category &#x27;Концепция и границы продукта&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item"><div class="menu__list-item-collapsible"><a class="menu__link menu__link--sublist menu__link--active" href="/T-master-class-service/docs/category/требования">Требования</a><button aria-label="Collapse sidebar category &#x27;Требования&#x27;" aria-expanded="true" type="button" class="clean-btn menu__caret"></button></div><ul style="display:block;overflow:visible;height:auto" class="menu__list"><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link menu__link--active" aria-current="page" tabindex="0" href="/T-master-class-service/docs/Requirements/arch">Функциональные требовния</a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/T-master-class-service/docs/Requirements/nonfunc">Нефункциональные требовния</a></li></ul></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="menu__link menu__link--sublist" href="/T-master-class-service/docs/category/сбор-требований">Сбор требований</a><button aria-label="Expand sidebar category &#x27;Сбор требований&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="menu__link menu__link--sublist" href="/T-master-class-service/docs/category/модели-данных">Модели данных</a><button aria-label="Expand sidebar category &#x27;Модели данных&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="menu__link menu__link--sublist" href="/T-master-class-service/docs/category/сценарии">Сценарии</a><button aria-label="Expand sidebar category &#x27;Сценарии&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="menu__link menu__link--sublist" href="/T-master-class-service/docs/category/api">API</a><button aria-label="Expand sidebar category &#x27;API&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="menu__link menu__link--sublist menu__link--sublist-caret" role="button" aria-expanded="false" href="/T-master-class-service/docs/BPMN/sceanrio1">BPMN</a></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="menu__link menu__link--sublist menu__link--sublist-caret" role="button" aria-expanded="false" href="/T-master-class-service/docs/UML diagrams/sceanrio1">UML diagrams</a></div></li></ul></nav></div></div></aside><main class="docMainContainer_TBSr"><div class="container padding-top--md padding-bottom--lg"><div class="row"><div class="col"><div class="docItemContainer_Djhp"><article><nav class="theme-doc-breadcrumbs breadcrumbsContainer_Z_bl" aria-label="Breadcrumbs"><ul class="breadcrumbs" itemscope="" itemtype="https://schema.org/BreadcrumbList"><li class="breadcrumbs__item"><a aria-label="Home page" class="breadcrumbs__link" href="/T-master-class-service/"><svg viewBox="0 0 24 24" class="breadcrumbHomeIcon_YNFT"><path d="M10 19v-5h4v5c0 .55.45 1 1 1h3c.55 0 1-.45 1-1v-7h1.7c.46 0 .68-.57.33-.87L12.67 3.6c-.38-.34-.96-.34-1.34 0l-8.36 7.53c-.34.3-.13.87.33.87H5v7c0 .55.45 1 1 1h3c.55 0 1-.45 1-1z" fill="currentColor"></path></svg></a></li><li itemscope="" itemprop="itemListElement" itemtype="https://schema.org/ListItem" class="breadcrumbs__item"><a class="breadcrumbs__link" itemprop="item" href="/T-master-class-service/docs/category/требования"><span itemprop="name">Требования</span></a><meta itemprop="position" content="1"></li><li itemscope="" itemprop="itemListElement" itemtype="https://schema.org/ListItem" class="breadcrumbs__item breadcrumbs__item--active"><span class="breadcrumbs__link" itemprop="name">Функциональные требовния</span><meta itemprop="position" content="2"></li></ul></nav><div class="theme-doc-markdown markdown"><header><h1>Функциональные требовния</h1></header><h2 class="anchor anchorWithStickyNavbar_LWe7" id="функциональные-требования"><strong>Функциональные требования</strong><a href="#функциональные-требования" class="hash-link" aria-label="Direct link to функциональные-требования" title="Direct link to функциональные-требования">​</a></h2>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="главная-страница-платформы-p1"><strong>Главная страница платформы. P1</strong><a href="#главная-страница-платформы-p1" class="hash-link" aria-label="Direct link to главная-страница-платформы-p1" title="Direct link to главная-страница-платформы-p1">​</a></h3>
+<ol>
+<li>
+<p>При входе на главную страницу платформы пользователю должны отображаться актуальные мастер-классы, а также сверху поисковая строка.</p>
+</li>
+<li>
+<p>Поисковая строка при пролистывании страницы вни з остаётся на экране у пользователя.</p>
+</li>
+<li>
+<p>Должны быть реализованы кнопки &quot;Регистрация&quot; и &quot;Вход&quot; или кнопка &quot;Личный кабинет&quot; для авторизованных пользователей.</p>
+</li>
+<li>
+<p>Каждый мастер-класс отображается в карточке.</p>
+</li>
+<li>
+<p>Карточки должны быть отсортированы по дате проведения(ближайшие отображаются первыми)</p>
+</li>
+<li>
+<p>На каждой карточке должно быть реализовано:</p>
+<p>a. Название МК</p>
+<p>b. Дата и время проведения</p>
+<p>c. Место проведения</p>
+<p>d. Цена МК</p>
+<p>e. Краткое описание МК</p>
+<p>f. Кнопка &quot;Забронировать&quot; при наличии свободных мест</p>
+<p>g. Кнопка &quot;Мест нет&quot; при отсутствии свободных мест</p>
+<p>h. Кнопка &quot;Подробнее&quot;</p>
+</li>
+<li>
+<p>Кнопки &quot;Подробнее&quot; и &quot;Забронировать&quot; должны быть активные и отображаться в низу карточки по центру.</p>
+</li>
+</ol>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="регистрация-и-создание-профиля-p1"><strong>Регистрация и создание профиля. P1</strong><a href="#регистрация-и-создание-профиля-p1" class="hash-link" aria-label="Direct link to регистрация-и-создание-профиля-p1" title="Direct link to регистрация-и-создание-профиля-p1">​</a></h3>
+<p><strong>Условие</strong>: пользователь нажал на кнопку &quot;Регистрация&quot;</p>
+<p>При входе на страницу регистрации должна отображаться форма со следующими полями:</p>
+<ol>
+<li>
+<p>Имя</p>
+</li>
+<li>
+<p>Электронная почта</p>
+</li>
+<li>
+<p>Номер телефона</p>
+</li>
+<li>
+<p>Пароль</p>
+</li>
+<li>
+<p>Повтор пароля</p>
+</li>
+<li>
+<p>Выбор роли ( Пользователь, Организатор, Арендодатель)</p>
+</li>
+</ol>
+<p>Снизу должна быть реализована кнопка &quot;Зарегистрироваться&quot;.</p>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="вход-и-выход-p1">Вход и выход <strong>P1</strong><a href="#вход-и-выход-p1" class="hash-link" aria-label="Direct link to вход-и-выход-p1" title="Direct link to вход-и-выход-p1">​</a></h3>
+<p>Пользователи могут авторизоваться с помощью email и пароля или через интеграцию с социальными сетями.</p>
+<p>Система должна предоставлять возможность выхода из учетной записи.</p>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="личный-кабинет-p1"><strong>Личный кабинет P1</strong><a href="#личный-кабинет-p1" class="hash-link" aria-label="Direct link to личный-кабинет-p1" title="Direct link to личный-кабинет-p1">​</a></h3>
+<p><strong>Условие:</strong> авторизованный пользователь ( вне зависимости от роли) на верхней панели навигации нажал кнопку &quot;Личный кабинет&quot;</p>
+<p>Систем перенаправляет юзера на страницу, где расположены следующие объекты:</p>
+<ol>
+<li>
+<p>Страница профиля.</p>
+</li>
+<li>
+<p>Кнопка &quot;Редактировать профиль&quot;.</p>
+</li>
+<li>
+<p>Кнопка &quot;Мои мероприятия&quot;(для ролей &quot;Пользователь&quot; и &quot;Организатор&quot;).</p>
+</li>
+<li>
+<p>Кнопка &quot;Создать мероприятие&quot;(для &quot;Организатор&quot;).</p>
+</li>
+<li>
+<p>Кнопка &quot;Арендовать&quot;(для &quot;Организатор&quot;)</p>
+</li>
+<li>
+<p>Кнопка &quot;Мои заявки&quot;(для роли &quot;Арендодатель&quot;).</p>
+</li>
+<li>
+<p>Кнопка &quot;Создать заявку&quot;(для &quot;Арендодатель&quot;).</p>
+</li>
+</ol>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="страница-с-мероприятиями-для-организатора-p1"><strong>Страница с мероприятиями для организатора P1</strong><a href="#страница-с-мероприятиями-для-организатора-p1" class="hash-link" aria-label="Direct link to страница-с-мероприятиями-для-организатора-p1" title="Direct link to страница-с-мероприятиями-для-организатора-p1">​</a></h3>
+<p><strong>Условие</strong>: организатор нажал на кнопку &quot;Мои мероприятия&quot;</p>
+<p>Система перенаправляет на страницу с карточками мероприятий.</p>
+<p>На странице должна остаться кнопка &quot;Создать мероприятия&quot;</p>
+<p>Вверху система отображает заголовок &quot;Будущие мероприятия&quot;. Здесь первыми система отображает карточки мероприятий, которые будут в ближайшее время.</p>
+<p>Под этим блоком должен отображаться заголовок &quot;Прошедшие мероприятия&quot;. В этом блоке сортировка идёт по убыванию (первыми отображаются мероприятия, которые были недавно).</p>
+<p>На карточке помимо базовой информации (см. требования к &quot;Главная страница платформы&quot;, пункт 6, подпункты a-e), должно быть:</p>
+<ol>
+<li>
+<p>Информация о количестве незабронированных мест.</p>
+</li>
+<li>
+<p>Информация о количестве забронированных мест.</p>
+</li>
+<li>
+<p>Кнопка &quot;Редактировать мероприятие&quot;.</p>
+</li>
+<li>
+<p>Кнопка &quot;Удалить мероприятие&quot;.</p>
+</li>
+</ol>
+<p>Кнопки должны быть активные.</p>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="создание-мероприятия-p1"><strong>Создание мероприятия P1</strong><a href="#создание-мероприятия-p1" class="hash-link" aria-label="Direct link to создание-мероприятия-p1" title="Direct link to создание-мероприятия-p1">​</a></h3>
+<p><strong>Условие:</strong> организатор нажал на кнопку &quot;Создать мероприятие&quot; в личном кабинете.</p>
+<p>Система перенаправляет организатора на страницу создания мероприятия, где отображается форма со следующими полями:</p>
+<ol>
+<li>
+<p>Название мероприятия</p>
+</li>
+<li>
+<p>Дата и время проведения</p>
+</li>
+<li>
+<p>Место проведения</p>
+</li>
+<li>
+<p>Цена за участие</p>
+</li>
+<li>
+<p>Краткое описание мероприятия</p>
+</li>
+<li>
+<p>Полное описание мероприятия</p>
+</li>
+<li>
+<p>Продолжительность меропр иятия</p>
+</li>
+<li>
+<p>Максимальное количество участников</p>
+</li>
+</ol>
+<p>Внизу формы должна быть кнопка &quot;Создать&quot;.</p>
+<p><strong>Условие:</strong> организатор нажал кнопку &quot;Создать&quot;.</p>
+<p>Система проверяет корректность заполнения всех полей. В случае успеха система добавляет запись в таблицу Events в базу данных и  мероприятие  отображается в списке &quot;Будущие мероприятия&quot;.</p>
+<p>Если какое-либо поле заполнено неверно или не заполнено вовсе, система выводит сообщение с указанием ошибки.</p>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="бронирование-мастер-класса-p1"><strong>Бронирование мастер-класса P1</strong><a href="#бронирование-мастер-класса-p1" class="hash-link" aria-label="Direct link to бронирование-мастер-класса-p1" title="Direct link to бронирование-мастер-класса-p1">​</a></h3>
+<p><strong>Условие</strong>: зарегистрированный пользователь нажал на кнопку &quot;Забронировать&quot; на карточке мастер-класса</p>
+<p>Поверх текущей страницы появляется окно подтверждение бронирования с кнопками &quot;Подтвердить и &quot;Отмена&quot;</p>
+<p>В момент нажатия кнопки &quot;Подтвердить&quot; система проверяет, что ещё остались места для бронирования на данный МК.</p>
+<p><strong>Условие:</strong> в момент нажатия кнопки мест а для бронирования закончились</p>
+<p>Систем должна вывести сообщение о том, что места для бронирования на данный мастер класс закончились.</p>
+<p>Система должна заменить активную кнопку &quot;Забронировать&quot; на неактивную кнопку &quot;Мест нет&quot;</p>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="кнопка-подтвердить-запись-на-мк-p1"><strong>Кнопка подтвердить запись на мк P1</strong><a href="#кнопка-подтвердить-запись-на-мк-p1" class="hash-link" aria-label="Direct link to кнопка-подтвердить-запись-на-мк-p1" title="Direct link to кнопка-подтвердить-запись-на-мк-p1">​</a></h3>
+<p><strong>Условие</strong>: зарегистрированный пользователь нажал на кнопку &quot;Подтвердить&quot; для записи на МК</p>
+<p>Система записывает в базу данных информацию о бронировании в таблицу <em>bookings,</em> создавая запись с полями:</p>
+<ol>
+<li>
+<p><em>booking_id</em></p>
+</li>
+<li>
+<p><em>user_id</em></p>
+</li>
+<li>
+<p><em>event_id</em></p>
+</li>
+<li>
+<p><em>booking_status</em></p>
+</li>
+<li>
+<p><em>booking_date</em></p>
+</li>
+</ol>
+<p>Система выводит сообщение о том, что пользователь успешно записался на мастер-класс.</p>
+<p>Также система должна отправить уведомление пользователю на почту с подтверждением бронирования.</p>
+<p>Далее кнопка &quot;Забронировать&quot; на карточке мероприятия (См. &quot;Главная страница платформы&quot; п ункт 5) заменяется на активную кнопку &quot;Отменить бронирование&quot;.</p>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="просмотр-деталей-мастер-класса-p1"><strong>Просмотр деталей мастер-класса P1</strong><a href="#просмотр-деталей-мастер-класса-p1" class="hash-link" aria-label="Direct link to просмотр-деталей-мастер-класса-p1" title="Direct link to просмотр-деталей-мастер-класса-p1">​</a></h3>
+<p><strong>Условие:</strong> пользователь нажал кнопку &quot;подробнее&quot; в карточке мастер-класса(МК).</p>
+<p>Система должна отобразить всплывающим окном поверх текущего окна следующую информацию:</p>
+<ol>
+<li>
+<p>Полное описание МК</p>
+</li>
+<li>
+<p>Продолжительность МК</p>
+</li>
+<li>
+<p>Информация об организаторе (имя, контакты)</p>
+</li>
+<li>
+<p>Информацию из карточки с главной страницы, кроме кнопки &quot;подробнее&quot; и краткого описания МК.(См. &quot;Главная страница платформы&quot;)</p>
+</li>
+</ol>
+<p>Кнопка &quot;Забронировать&quot; должны быть активной и располагаться в низу подробного описания по центру.</p>
+<p><strong>Условие:</strong> пользователь нажал кнопку &quot;Зарегистрироваться&quot;</p>
+<p>Всплывает окно для ввода проверочного кода из смс</p>
+<p>После корректного ввода кода система регистрирует пользователя (производится запись в базу данных) при  условии, что все поля заполнены и пользователя с таким номером телефона нет в базе данных.</p>
+<p><strong>Условие</strong>: пользователь с таким номером уже есть в базе.</p>
+<p>Выводится сообщение о том, что пользователь с данным номером уже зарегистрирован.</p>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="поиск-мероприятий-пользователями-p2">Поиск мероприятий пользователями <strong>P2</strong><a href="#поиск-мероприятий-пользователями-p2" class="hash-link" aria-label="Direct link to поиск-мероприятий-пользователями-p2" title="Direct link to поиск-мероприятий-пользователями-p2">​</a></h3>
+<p>Система должна дать пользователю вводить текст при нажатии на поисковую строку (См. &quot;Главная страница платформы&quot;).</p>
+<p><strong>Условие</strong>: пользователь ввёл текст и нажал кнопку Enter</p>
+<p>Система должна перейти на новую страницу.</p>
+<p>Система должна вывести те карточки с мастер классами, которые наиболее подходят под запрос пользователя.</p>
+<p>Над списком результатов должна быть реализована возможность сортировки карточке по следующим критериям:</p>
+<ol>
+<li>
+<p>По популярности ( по процентажу(количество броней/общее количество мест)  бронирования мастер-класса)</p>
+</li>
+<li>
+<p>По дате (самые ближайшие и самые дальние)</p>
+</li>
+<li>
+<p>По цене (самые дешевые и самые дорогие)</p>
+</li>
+<li>
+<p>По дате создания мастер-класса(самые ближайшие и самые дальние)</p>
+</li>
+</ol>
+<p>Слева должны быть расположены фильтры для уточнения результатов поиска:</p>
+<ol start="5">
+<li>
+<p>Цена ( возможность выбор диапазона цен с помощью полей для ввода минимальной и максимальной цены, а также ползунка)</p>
+</li>
+<li>
+<p>Дата проведения (возможность выбрать конкретную дату или диапазон дат с помощью календаря)</p>
+</li>
+<li>
+<p>Предметная область мастер-класса (фильтрация по категориям)</p>
+</li>
+<li>
+<p>Город проведения мастер класса (возможность выбрать город проведения мастер-класса, с встроенным поиском по городам)</p>
+</li>
+</ol>
+<p>После выбора и применения фильтров система должна вывести мастер классы подходящие под выбранные критерии.</p>
+<p><strong>Условие:</strong> по заданным пользователям фильтрам ничего не найдено</p>
+<p>Система должна отобразить сообщение: «По вашему запросу мастер-классы не найдены. Попробуйте изменить параметры поиска».</p>
+<p><strong>Условие:</strong> пользователь ввёл некорректные данные в фильтры</p>
+<p>Система должна обработать ошибку и отобразить пользователю о некорректном в воде.</p>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="страница-с-заявками-для-арендодателя-p2"><strong>Страница с заявками для арендодателя P2</strong><a href="#страница-с-заявками-для-арендодателя-p2" class="hash-link" aria-label="Direct link to страница-с-заявками-для-арендодателя-p2" title="Direct link to страница-с-заявками-для-арендодателя-p2">​</a></h3>
+<p><strong>Условие:</strong> пользователь с ролью &quot;Арендодатель&quot; нажал кнопку &quot;Мои заявки&quot;</p>
+<p>Система перенаправляет на страницу с карточками заявок.</p>
+<p>На странице должна остаться кнопка &quot;Создать заявку&quot;</p>
+<p>На карточке должно быть:</p>
+<ol>
+<li>
+<p>Описание сдаваемого помещения/предмета</p>
+</li>
+<li>
+<p>Адрес помещения</p>
+</li>
+<li>
+<p>Контактные данные</p>
+</li>
+<li>
+<p>Цена</p>
+</li>
+<li>
+<p>Изображение объекта(при наличии)</p>
+</li>
+<li>
+<p>Кнопка &quot;Редактировать заявку&quot;.</p>
+</li>
+<li>
+<p>Кнопка &quot;Удалить заявку&quot;.</p>
+</li>
+</ol>
+<p>Кнопки должны быть активные.</p>
+<p>Сами карточки тоже должны быть активные, при нажатии на них отображается подробная информация о заявке(См. &quot;Информация о заявке&quot;)</p>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="карточка-с-информацией-о-заявке-p2"><strong>Карточка с информацией о заявке P2</strong><a href="#карточка-с-информацией-о-заявке-p2" class="hash-link" aria-label="Direct link to карточка-с-информацией-о-заявке-p2" title="Direct link to карточка-с-информацией-о-заявке-p2">​</a></h3>
+<p><strong>Условие</strong>: арендодатель нажал на карточку заявки</p>
+<p>Должна отображаться информация о заявке (См. &quot;Страница с заявками для арендодателя&quot;).</p>
+<p>Также должно отображаться расписание в виде таблицы, где показаны число, дни недели и время, когда предмет заявки забронирован.</p>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="аренда-помещенияоборудования-организатором-p2">Аренда помещения/оборудования организатором <strong>P2</strong><a href="#аренда-помещенияоборудования-организатором-p2" class="hash-link" aria-label="Direct link to аренда-помещенияоборудования-организатором-p2" title="Direct link to аренда-помещенияоборудования-организатором-p2">​</a></h3>
+<p><strong>Условие</strong>: организатор нажал кнопку &quot;Арендовать&quot; в личном кабинете ( См. &quot;Личный кабинет&quot;)</p>
+<p>Система должна на страницу с доступными для аренды помещениями/оборудованием
+Страница должна содержать карточки с объектами аренды, содержащие основную информацию:</p>
+<ol>
+<li>
+<p>Описание сдаваемого помещения/предмета</p>
+</li>
+<li>
+<p>Изображение объекта(при наличии)</p>
+</li>
+<li>
+<p>Адрес помещения (если это п омещение)</p>
+</li>
+<li>
+<p>Контактные данные арендодателя</p>
+</li>
+<li>
+<p>Цена аренды</p>
+</li>
+<li>
+<p>Доступные даты бронирования</p>
+</li>
+<li>
+<p>Кнопка &quot;Забронировать&quot;</p>
+</li>
+</ol>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="бронирование-аренды-p2">Бронирование аренды <strong>P2</strong><a href="#бронирование-аренды-p2" class="hash-link" aria-label="Direct link to бронирование-аренды-p2" title="Direct link to бронирование-аренды-p2">​</a></h3>
+<p><strong>Условие:</strong> организатор нажал кнопку забронировать(См. &quot;Аренда помещения/оборудования организатором&quot;)</p>
+<p>Организатору предлагается выбрать дату и время аренды.</p>
+<p>Сначала пользователь кликает на дату, затем ему предлагается выбрать время аренды.
+Организатор может выбирать только свободное время, забронированные даты и время не кликабельны</p>
+<p>Снизу расположена кнопка &quot;Подтвердить бронирование&quot;</p>
+<p>В момент нажатия кнопки &quot;Подтвердить бронирование&quot; система проверяет, что в текущий момент бронь на выбранную дату и часы ещё свободна.</p>
+<p><strong>Условие:</strong> в момент нажатия кнопки &quot;Подтвердить бронирование&quot; бронь свободна</p>
+<p>Система должна отобразить сообщение об успешном бронировании</p>
+<p>Система отправляет организ атору на почту приходит подтверждение о бронировании</p>
+<p>Для данного организатора на всех забронированных карточках должна информация о том, на какую дату организатор забронировал помещение/оборудование.</p>
+<p><strong>Условие:</strong> в момент нажатия кнопки &quot;Подтвердить бронирование&quot; бронь занята</p>
+<p>Систем должна вывести сообщение о том, что на данное время помещение/оборудование забронировано.</p>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="редактирование-профиля-p3"><strong>Редактирование профиля P3</strong><a href="#редактирование-профиля-p3" class="hash-link" aria-label="Direct link to редактирование-профиля-p3" title="Direct link to редактирование-профиля-p3">​</a></h3>
+<p><strong>Условие</strong>: юзер нажал кнопку редактировать профиль в личном кабинете.</p>
+<p>При входе на страницу с личной информацией все пользователи смогут редактировать личную информацию на странице профиля, а именно:</p>
+<ol>
+<li>
+<p>Имя</p>
+</li>
+<li>
+<p>Email</p>
+</li>
+<li>
+<p>Фотографию профиля</p>
+</li>
+<li>
+<p>Описание</p>
+</li>
+</ol>
+<p>Изменения сохраняются в базе данных, обновляя соответствующие текущие поля в таблице.</p>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="кнопка-редактирование-мероприятия-p3"><strong>Кнопка &quot;Редактирование мероприятия&quot; P3</strong><a href="#кнопка-редактирование-мероприятия-p3" class="hash-link" aria-label="Direct link to кнопка-редактирование-мероприятия-p3" title="Direct link to кнопка-редактирование-мероприятия-p3">​</a></h3>
+<p><strong>Условие:</strong> организатор нажал на кнопку &quot;Редактировать мероприятие&quot;.</p>
+<p>Система должна открыть форму редактирования мероприятия с уже заполненными полями.</p>
+<p>Все поля кроме количества забронированных мест должны быть доступны для редактирования.
+Организатор может внести любое изменение(поля пустыми оставлять не может) и нажать кнопку &quot;Сохранить изменения&quot;, которая должна отображаться внизу страницы.</p>
+<p><strong>Условие</strong>: организатор нажал кнопку &quot;Сохранить изменения&quot;</p>
+<p>Система должна обновить информацию в базе данных в таблице Events для данного мероприятия.</p>
+<p>Система должна отобразить сообщение об успешном обновлении информации.</p>
+<p>Система должна отправить уведомления участникам об изменениях в мероприятии.</p>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="кнопка-редактирование-заявку-p3"><strong>Кнопка &quot;Редактирование заявку&quot; P3</strong><a href="#кнопка-редактирование-заявку-p3" class="hash-link" aria-label="Direct link to кнопка-редактирование-заявку-p3" title="Direct link to кнопка-редактирование-заявку-p3">​</a></h3>
+<p><strong>Условие:</strong> арендодатель нажал на кнопку &quot;Редактировать заявку&quot;.</p>
+<p>Система должна открыть форму редактирования заявок с уже заполненными полями.</p>
+<p>Все поля должны быть доступны для редактирования.
+Арендодатель может внести любое изменение(поля пустыми оставлять не может) и нажать кнопку &quot;Сохранить изменения&quot;, которая должна отображаться внизу страницы.</p>
+<p><strong>Условие</strong>: арендодатель нажал кнопку &quot;Сохранить изменения&quot;</p>
+<p>Система должна обновить информацию в базе данных в таблице <em>Applications</em> для данной заявки.</p>
+<p>Система должна отобразить сообщение об успешном обновлении информации.</p>
+<p>Система должна отправить уведомления организаторам, которые забронировали помещение, об изменениях в заявке.</p>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="отмена-бронирования-p3">Отмена бронирования <strong>P3</strong><a href="#отмена-бронирования-p3" class="hash-link" aria-label="Direct link to отмена-бронирования-p3" title="Direct link to отмена-бронирования-p3">​</a></h3>
+<p><strong>Условие:</strong> зарегистрированный пользователь нажал кнопку &quot;Отменить бронирование&quot;</p>
+<p>Систем должна вывести окно поверх текущего с подтверждением отмены бронирования с текстом &quot;Вы уверены, что хотите отменить бронирование?&quot;</p>
+<p>Также в этом окне должны быть активные кнопки &quot;Подтвердить&quot; и &quot;Отменить&quot;</p>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="кнопка-подтверждения-отмены-бронирования-p3">Кнопка подтверждения отмены бронирования <strong>P3</strong><a href="#кнопка-подтверждения-отмены-бронирования-p3" class="hash-link" aria-label="Direct link to кнопка-подтверждения-отмены-бронирования-p3" title="Direct link to кнопка-подтверждения-отмены-бронирования-p3">​</a></h3>
+<p>Условие: зарегистрированный пользователь нажал кнопку &quot;Подтвердить&quot;(См. &quot;Отмена бронирования&quot;)</p>
+<p>Система должна в таблице таблице bookings для соответствующего <em>booking_id</em> поле <em>booking_status</em> должно измениться на «Отменено».</p>
+<p>Также система должна отправить пользователю уведомление о том, что бронирование отменено.</p>
+<p>Система должна обновить количество свободных мест для бронирования.</p>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="кнопка-отменить-в-отмене-бронирования-p3">Кнопка &quot;Отменить&quot; в отмене бронирования <strong>P3</strong><a href="#кнопка-отменить-в-отмене-бронирования-p3" class="hash-link" aria-label="Direct link to кнопка-отменить-в-отмене-бронирования-p3" title="Direct link to кнопка-отменить-в-отмене-бронирования-p3">​</a></h3>
+<p><strong>Условие:</strong> пользователь нажал кнопку &quot;Отмена</p>
+<p>Система отменяет процесс отмены бронирования, возвращая пользователя на страницу списка мероприятий без изменений.</p>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="удаление-мероприятия-p3"><strong>Удаление мероприятия P3</strong><a href="#удаление-мероприятия-p3" class="hash-link" aria-label="Direct link to удаление-мероприятия-p3" title="Direct link to удаление-мероприятия-p3">​</a></h3>
+<p><strong>Условие:</strong> организатор нажал на кнопку &quot;Удалить мероприятие&quot;. ****</p>
+<p>Систем должна вывести окно поверх текущего с подтверждением удаления с текстом &quot;Вы уверены, что хотите удалить это мероприятие?&quot;</p>
+<p>Также в этом окне отображаются активные кнопки &quot;Подтвердить&quot; и &quot;Отмена&quot;.</p>
+<p><strong>Условие:</strong> организатор нажать кнопку &quot;Подтвердить&quot;</p>
+<p>Система должна пометить запись о мероприятии в таблице Events, изменив значение поля &quot;deleted&quot; данного мероприятия на true. (Не удаленные мероприятия по умолчанию имеют значение false)</p>
+<p>Систем отображает сообщение &quot;Мероприятие успешно удалено&quot; и обновляет страницу мероприятий (см. &quot;Страница с мероприятиями для организатора&quot;), убрав данное мероприятие.</p>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="отмена-удаления-p3"><strong>Отмена удаления P3</strong><a href="#отмена-удаления-p3" class="hash-link" aria-label="Direct link to отмена-удаления-p3" title="Direct link to отмена-удаления-p3">​</a></h3>
+<p><strong>Условие:</strong> организатор нажал кнопку &quot;Отмена&quot;</p>
+<p>Система отменяет процесс удаления, возвращая пользователя на страницу списка мероприятий без изменений.</p>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="удаление-заявки-p3"><strong>Удаление заявки P3</strong><a href="#удаление-заявки-p3" class="hash-link" aria-label="Direct link to удаление-заявки-p3" title="Direct link to удаление-заявки-p3">​</a></h3>
+<p><strong>Условие:</strong> арендодатель нажал на кнопку &quot;Удалить заявку&quot;. ****</p>
+<p>Систем должна вывести окно поверх текущего с подтверждением удаления с текстом &quot;Вы уверены, что хотите удалить эту заявку?&quot;</p>
+<p>Также в этом окне отображаются активные кнопки &quot;Подтвердить&quot; и &quot;Отмена&quot;.</p>
+<p><strong>Условие:</strong> организатор нажать кнопку &quot;Подтвердить&quot;</p>
+<p>Система должна пометить запись о мероприятии в таблице <em>Applications</em>, изменив значение поля &quot;deleted&quot; данной заяв ки на true. (Не удаленные заявки по умолчанию имеют значение false)</p>
+<p>Систем отображает сообщение &quot;Заявка успешно удалена&quot; и обновляет страницу заявок(см. &quot;Страница с заявками для арендодателя&quot;), убрав данную заявку.</p>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="отмена-удаления-заявки-p3"><strong>Отмена удаления заявки P3</strong><a href="#отмена-удаления-заявки-p3" class="hash-link" aria-label="Direct link to отмена-удаления-заявки-p3" title="Direct link to отмена-удаления-заявки-p3">​</a></h3>
+<p><strong>Условие:</strong> арендодатель нажал кнопку &quot;Отмена&quot;</p>
+<p>Система отменяет процесс удаления, возвращая пользователя на страницу списка заявок без изменений.</p>
+<p>В данном файле все заголовки с требованиями упорядочены по приоритету, начиная от самых значимых, заканчивая менее значимыми. P1, P2, P3 это уровень приоритета.</p>
+<h4 class="anchor anchorWithStickyNavbar_LWe7" id="почему-такой-формат">Почему такой формат:<a href="#почему-такой-формат" class="hash-link" aria-label="Direct link to Почему такой формат:" title="Direct link to Почему такой формат:">​</a></h4>
+<p>Я выбрал такой формат описания требований, потому что, по моему мнению, он легко воспринимается разработчиком, четко и ёмко описано, что нужно сделать и в каком порядке.</p>
+<h4 class="anchor anchorWithStickyNavbar_LWe7" id="логика-приоритетов">Логика приоритетов:<a href="#логика-приоритетов" class="hash-link" aria-label="Direct link to Логика приоритетов:" title="Direct link to Логика приоритетов:">​</a></h4>
+<p>Приоритеты выбирал из следующей логики: сервис не будет работать, если организаторы не создадут заявки, поэтому сначала нужно обеспечить регистрацию и создание заявок.</p>
+<p>А чтобы обеспечить регистрацию и вход на сервис необходимо реализовать главную страницу.
+Далее, чтобы продуктом пользовались, нужны пользователи, которые будут бронировать места на мастер-классах. Поэтому далее идёт всё, чтобы забронировать место. Также для удобства пользователей следующим идёт поиск МК.</p>
+<p>Затем указано всё для успешной работы арендодателя, логика в том, что если не будет организаторов и пользователей, которые к ним ходят, то некому арендовывать продукт у арендодателей.</p>
+<p>Затем идёт редактирование заявок, и отмена брони и мероприятий, потому что без этих функций сервис в целом сможет успешно стартовать.</p></div><footer class="theme-doc-footer docusaurus-mt-lg"><div class="row margin-top--sm theme-doc-footer-edit-meta-row"><div class="col"><a href="https://github.com/andiyash/T-master-class-service/docs/Requirements/arch.md" target="_blank" rel="noopener noreferrer" class="theme-edit-this-page"><svg fill="currentColor" height="20" width="20" viewBox="0 0 40 40" class="iconEdit_Z9Sw" aria-hidden="true"><g><path d="m34.5 11.7l-3 3.1-6.3-6.3 3.1-3q0.5-0.5 1.2-0.5t1.1 0.5l3.9 3.9q0.5 0.4 0.5 1.1t-0.5 1.2z m-29.5 17.1l18.4-18.5 6.3 6.3-18.4 18.4h-6.3v-6.2z"></path></g></svg>Edit this page</a></div><div class="col lastUpdated_JAkA"></div></div></footer></article><nav class="pagination-nav docusaurus-mt-lg" aria-label="Docs pages"><a class="pagination-nav__link pagination-nav__link--prev" href="/T-master-class-service/docs/category/требования"><div class="pagination-nav__sublabel">Previous</div><div class="pagination-nav__label">Требования</div></a><a class="pagination-nav__link pagination-nav__link--next" href="/T-master-class-service/docs/Requirements/nonfunc"><div class="pagination-nav__sublabel">Next</div><div class="pagination-nav__label">Нефункциональные требовния</div></a></nav></div></div></div></div></main></div></div></div><footer class="footer footer--dark"><div class="container container-fluid"><div class="row footer__links"><div class="col footer__col"><div class="footer__title">Docs</div><ul class="footer__items clean-list"><li class="footer__item"><a class="footer__link-item" href="/T-master-class-service/docs">Docs</a></li></ul></div><div class="col footer__col"><div class="footer__title">Community</div><ul class="footer__items clean-list"><li class="footer__item"><a href="https://stackoverflow.com/questions/tagged/docusaurus" target="_blank" rel="noopener noreferrer" class="footer__link-item">Stack Overflow<svg width="13.5" height="13.5" aria-hidden="true" viewBox="0 0 24 24" class="iconExternalLink_nPIU"><path fill="currentColor" d="M21 13v10h-21v-19h12v2h-10v15h17v-8h2zm3-12h-10.988l4.035 4-6.977 7.07 2.828 2.828 6.977-7.07 4.125 4.172v-11z"></path></svg></a></li><li class="footer__item"><a href="https://discordapp.com/invite/docusaurus" target="_blank" rel="noopener noreferrer" class="footer__link-item">Discord<svg width="13.5" height="13.5" aria-hidden="true" viewBox="0 0 24 24" class="iconExternalLink_nPIU"><path fill="currentColor" d="M21 13v10h-21v-19h12v2h-10v15h17v-8h2zm3-12h-10.988l4.035 4-6.977 7.07 2.828 2.828 6.977-7.07 4.125 4.172v-11z"></path></svg></a></li><li class="footer__item"><a href="https://x.com/docusaurus" target="_blank" rel="noopener noreferrer" class="footer__link-item">X<svg width="13.5" height="13.5" aria-hidden="true" viewBox="0 0 24 24" class="iconExternalLink_nPIU"><path fill="currentColor" d="M21 13v10h-21v-19h12v2h-10v15h17v-8h2zm3-12h-10.988l4.035 4-6.977 7.07 2.828 2.828 6.977-7.07 4.125 4.172v-11z"></path></svg></a></li></ul></div><div class="col footer__col"><div class="footer__title">More</div><ul class="footer__items clean-list"><li class="footer__item"><a class="footer__link-item" href="/T-master-class-service/blog">Blog</a></li><li class="footer__item"><a href="https://github.com/facebook/docusaurus" target="_blank" rel="noopener noreferrer" class="footer__link-item">GitHub<svg width="13.5" height="13.5" aria-hidden="true" viewBox="0 0 24 24" class="iconExternalLink_nPIU"><path fill="currentColor" d="M21 13v10h-21v-19h12v2h-10v15h17v-8h2zm3-12h-10.988l4.035 4-6.977 7.07 2.828 2.828 6.977-7.07 4.125 4.172v-11z"></path></svg></a></li></ul></div></div><div class="footer__bottom text--center"><div class="footer__copyright">Copyright © 2024 My Project, Inc. Built with Docusaurus.</div></div></div></footer></div>
+</body>
+</html>
